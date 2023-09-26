@@ -1,0 +1,8 @@
+div.apdep_slogan{
+  margin-left: 20px;
+}
+@media (max-width: 640px) {
+  div.apdep_slogan{
+    display: none;
+  }
+}

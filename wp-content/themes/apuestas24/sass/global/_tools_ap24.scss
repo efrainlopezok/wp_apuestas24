@@ -1,0 +1,42 @@
+
+.gried-line-50{
+    &.news-grid-row {
+        .news-heading{
+            &::before{
+                width: calc(40% - 10px);
+            }
+        }
+        .wpb_text_column{
+            position: absolute;
+            width: 100%;
+        }
+    }
+    @media #{$tablet} {
+        &.news-grid-row {
+            .news-heading{
+                &::before{
+                    width: calc(100% - 10px);
+                }
+            }
+            .wpb_text_column{
+                position: relative;
+                width: 100%;
+            }
+        }
+    } 
+}
+
+.back-to-top{
+    display: none;
+}
+
+.btn-small{
+    .btn-solid{
+        padding: 14px 40px;
+    }
+}
+.btn-large{
+    .btn-solid{
+        padding: 14px 50px;
+    }
+}

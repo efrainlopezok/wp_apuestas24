@@ -1,0 +1,10 @@
+#wp-admin-bar-wp-logo,
+#types-information-table,
+#wp-admin-bar-new-content,
+#wp-admin-bar-comments,
+#toplevel_page_vc-welcome{
+	display: none !important;
+}
+#wp-version-message{
+	display: none;
+}

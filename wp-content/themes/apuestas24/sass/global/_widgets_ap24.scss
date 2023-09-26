@@ -1,0 +1,187 @@
+.bl-v2{
+	.item-gray-cont{
+		background-color: $color-box;
+		p,
+		h5{
+			color: $color-white;
+		}
+		h5{
+			min-height: 56px;
+		}
+		a{
+			background-color: $color-yellow-btn !important;
+			color: $color-black-btn !important;
+		}
+	}
+
+	& > div{
+		.tags-l{
+			margin-bottom: 40px !important;
+		}
+		.bonus-link{
+			a{
+				background-color: $color-black-btn !important;
+				&:hover{
+					background-color: $color-black-btn-hover !important;	
+				}
+			}
+		}
+		&.free-bet{
+			width: 100%;
+			align-items: center;
+		}
+		&:not(.free-bet){
+			width: 49%;
+			float: left;
+			flex-direction: column;
+			.bonus-link,
+			.bonus-details,
+			.details-bonus {
+			    width: 100%;
+			}
+			.bonus-link{
+				padding-top: 25px;
+				a{
+					float: left;
+				}
+			}
+		}
+		&:nth-of-type(odd){
+			margin-right: 19px;
+		}
+	}
+	.tags-l{
+		display: inline-block;
+	}
+	h5{
+		line-height: 1.6;
+	}
+	.cat-exclusive{
+		background-color: $color-red !important;
+	}
+	.cat-free-bet,
+	.cat-aposta-gratis,
+	.cat-welcome-cash{
+		background-color: $color-blue !important;
+	}
+
+	@media #{$tablet} {
+		& > div{
+			&:not(.free-bet){
+				width: 48.5%;
+			}
+		}
+	}
+	@media #{$tablet-s} {
+		.item-regular{
+			.tags-l{
+				img{
+					display: block !important;
+				    top: 0 !important;
+				    margin-bottom: 10px;
+				}
+			}
+		}    
+	}
+	
+	@media #{$mobile-lm} {
+		& > div{
+			&:not(.free-bet){
+				width: 100%;
+			}
+		}
+		.item-gray-cont{
+			h5{
+				min-height: auto;
+			}
+		}
+		.tags-l{
+			span:nth-of-type(1){
+				margin-left: 0 !important;
+			}
+		}
+	}
+}
+.news-list-ap24{
+	.loop{
+		.col-left,
+		.col-right{
+			width: 49.25%;
+			display: inline-block;
+			.four-content{
+				width: 50%;
+			}
+			.col-left-3,
+			.col-left-1{
+				.content{
+					padding-left: 0;
+				}
+			}
+			.col-left-2,
+			.col-left-4{
+				.content{
+					padding-right: 0;
+				}
+			}
+		}
+		.col-right{
+			float: right;
+
+		}
+		@media #{$tablet-big} {
+			.col-left-3,
+			.col-left-1{
+				.content{
+					padding-right: 10px !important;
+				}
+			}
+			.col-left-4,
+			.col-left-2{
+				.content{
+					padding-left: 10px !important;
+				}
+			}
+		}
+		@media #{$mobile} {
+			.col-left,
+			.col-right{
+				width: 100%;
+				display: block;
+			}
+			.col-left-3,
+			.col-left-1{
+				.content{
+					padding-right: 10px !important;
+				}
+			}
+			.col-left-4,
+			.col-left-2{
+				.content{
+					padding-left: 10px !important;
+				}
+			}
+		}
+		@media #{$mobile-xs} {
+			.col-left,
+			.col-right{
+				.four-content{
+					width: 100%;
+					display: block;
+					.content{
+						padding-right: 0!important;
+						padding-left: 0!important;
+					}
+				}
+			}
+		}
+	}
+}
+.review-mark{
+	position: absolute;
+	left: 0;
+	top: -15px;
+	padding: 2px 15px;
+	font-size: 12px;
+	font-weight: bold;
+	color: $color-white;
+}

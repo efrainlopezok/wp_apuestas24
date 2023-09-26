@@ -1,0 +1,56 @@
+.show-only-email{
+    .container-form{
+        .your-name{
+            display: none;
+        } 
+    } 
+    .pre-footer {
+        .wpcf7-form>p {
+            label:nth-child(2) {
+                max-width: 380px;
+                width: 100%;
+            }
+            label:nth-child(1) {
+                display: none;
+            }
+        }
+        h3{
+            max-width: initial;
+        }
+    }  
+}
+
+.show-all-form{
+    .pre-footer{
+        .container-form{
+            input[type='text'],
+            input[type='email']{
+                max-width: 250px;
+            }   
+        }
+        .container-pre-footer {
+            h3 {
+                margin-top: -8px;
+            }
+        }
+    }
+    @media #{$tablet} {
+        .pre-footer{
+            .container-form{
+                input[type='text'],
+                input[type='email']{
+                    max-width: 100%;
+                    width: 100%;
+                }   
+            }
+        }
+    } 
+}
+.site-footer{
+    .vc_col-sm-2{
+        img{
+            max-width: 147px;
+            width: 100%;
+        }
+    }
+}    
